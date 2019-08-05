@@ -1,0 +1,235 @@
+/* Common CSS */
+.w-50 {
+    width: 50%!important;
+}
+.mr-0 {
+    margin-right: 0!important;
+}
+.py-30 {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}
+.py-10 {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+.px-10 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.px-30 {
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+}
+.pt-30 {
+    padding-top: 30px!important;
+}
+.pt-50 {
+    padding-top: 50px!important;
+}
+
+
+
+
+
+
+
+
+
+
+/*------ header css -----------*/
+
+
+.search-header{
+    width: auto; 
+    display: inline-block;
+}
+
+.search-header .search-on-top {
+    opacity: 1;
+    visibility: visible;
+    max-width: 100%;
+    box-shadow: none;
+    position: relative;
+    transform: none;
+    right: auto;
+}
+.search-on-top {
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(0, -50%);
+    box-shadow: 0 0 20px 0 rgba(18, 25, 33, 0.1);
+    border-radius: 10px;
+    transition: opacity .35s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.search-header .search-on-top button[type="submit"] {
+    left: 0;
+    top: 17px;
+    padding: 0;
+}
+
+.search-on-top button[type="submit"] {
+    background: none;
+    left: 20px;
+    top: 17px;
+}
+.search-on-top .form-icon {
+    position: absolute;
+}
+.search-header .search-on-top input[type="search"]:focus {
+    border: 0;
+    border-bottom: 2px solid #0083ff;
+
+    color: #273f5b;
+}
+
+.search-on-top input[type="search"]:focus {
+    color: #273f5b;
+}
+.search-header .search-on-top input[type="search"] {
+    background: transparent;
+    outline-offset: -2px;
+    margin-bottom: 0;
+    box-shadow: none;
+    border: 2px solid #5c6c7a;
+    border-radius: 5px;
+    padding: 2px 40px;
+    font-size: 14px;
+}
+.search-on-top input[type="search"] {
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 17px 80px;
+    border-radius: 10px;
+    margin: 0;
+}
+.search-header .typeahead__container [type="submit"] .utouch-icon {
+    width: 25px;
+    height: 16px;
+    fill: #6987ab;
+    transform: rotateY(-180deg);
+    top: 5px;
+}
+.search-header .typeahead__container .close .utouch-icon {
+    width: 10px;
+    height: 10px;
+    fill: #6987ab;
+    top: 5px;
+}
+.search-header .search-on-top button[type="submit"] {
+    left: 6px;
+    top: 2.5px;
+    padding: 0;
+}
+.search-header .typeahead__container .close {
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+.search-header .typeahead__container {
+    padding-bottom: 0px;
+}
+
+.top-bar .follow_us-new {
+    float: right;
+    top: 4px;
+    position: relative;
+}
+
+/*----------- End of header css---------- */
+
+
+/*----------- Home page css ------------*/
+
+
+#our_services .slides-item {
+    display: initial;
+}
+
+#our_services .btn-prev-main {
+    left: 0;
+}
+
+#our_services .btn-next-main {
+    right: 0;
+}
+
+#our_services .with-bg {
+    background: transparent;
+    margin: 0 10px;
+}
+
+#our_services h2.slider-content-title {
+    top: 120px;
+    z-index: 10;
+    color: #fff;
+}
+#our_services .heading-sup-title {
+    font-size : 20px;
+}
+#our_services .info-box-title {
+    font-size : 15px;
+}
+#featured_reports .crumina-case-item {
+    float: none;
+}
+#featured_reports .case-item-content {
+    text-align: center;
+    padding: 35px 5px;
+}
+#featured_reports .case-item-content .title{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#featured_reports .case-item__thumb img{
+    width: 220px;
+}
+/* #main_slider .bg-2 {
+    background-image: url(../img/index/slider-1.png);
+} */
+#main_slider .bg-2 {
+    background-image: url(../img/index/png/slides_2.png);
+    background-size: cover;
+}
+
+#our_services_tabs .slides-item {
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 9px;
+    font-size: 20px;
+}
+
+/*-------------- End of home page css----------- */
+
+@media (min-width: 1400px){
+    .container-header-top {
+        width: 1400px;
+    }
+}
+@media (min-width: 1024px){
+    .search-header {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px){
+    .top-bar .follow_us-new {
+        padding-top: 18px;
+        float: none;
+    }
+    #our_services.slider-tabs-vertical-line .slider-slides{
+        bottom: 50px;
+    }
+}
