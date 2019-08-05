@@ -21,7 +21,10 @@ const providers = [
   '@adonisjs/auth/providers/AuthProvider',
 
   //custome provider install list
-  '@adonisjs/mail/providers/MailProvider'
+  '@adonisjs/mail/providers/MailProvider',
+  'adonis-acl/providers/AclProvider',
+  '@adonisjs/validator/providers/ValidatorProvider',
+  
 ]
 
 /*
@@ -34,7 +37,8 @@ const providers = [
 |
 */
 const aceProviders = [
-  '@adonisjs/lucid/providers/MigrationsProvider'
+  '@adonisjs/lucid/providers/MigrationsProvider',
+  'adonis-acl/providers/CommandsProvider',
 ]
 
 /*
@@ -49,7 +53,12 @@ const aceProviders = [
 |   { Route: 'Adonis/Src/Route' }
 |
 */
-const aliases = {}
+const aliases = {
+
+  //custome add
+  Role: 'Adonis/Acl/Role',
+  Permission: 'Adonis/Acl/Permission',
+}
 
 /*
 |--------------------------------------------------------------------------

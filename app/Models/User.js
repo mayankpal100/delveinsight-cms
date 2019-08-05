@@ -7,8 +7,17 @@ const Hash = use('Hash')
 const Model = use('Model')
 
 class User extends Model {
+
+  static get traits () {
+    return [
+      '@provider:Adonis/Acl/HasRole',
+      '@provider:Adonis/Acl/HasPermission'
+    ]
+  }
+
   static boot () {
     super.boot()
+
 
     /**
      * A hook to hash the user password before saving
