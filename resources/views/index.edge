@@ -14,13 +14,13 @@ Delveinsight llp
 
     <!-- Main Slider -->
 
-    <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade">
+    <div class="crumina-module crumina-module-slider container-full-width" id="main_slider">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" data-autoplay="10000">
 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide bg-1 main-slider-bg-light">
+                <div class="swiper-slide bg-1 main-slider-bg-light" >
 
                     <div class="container">
                         <div class="row table-cell">
@@ -64,7 +64,7 @@ Delveinsight llp
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-thumb" data-swiper-parallax="-400"
                                     data-swiper-parallax-duration="600">
-                                    <img src="img/slides1.png" alt="slider">
+                                    <img src="{{assetsUrl('img/index/png/slides_2.png')}}" alt="slider">
                                 </div>
                             </div>
 
@@ -151,7 +151,7 @@ Delveinsight llp
                             <div class="col-lg-6 col-sm-12 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300"
                                     data-swiper-parallax-duration="500">
-                                    <img src="img/slides2.png" alt="slider">
+                                    <img src="{{assetsUrl('img/index/png/slides_2.png')}}" alt="slider">
                                 </div>
                             </div>
 
@@ -185,21 +185,21 @@ Delveinsight llp
 
     <!-- ... end Main Slider -->
 
-    <!-- Info Boxes -->
+<!-- Info Boxes -->
 
-    <section class="medium-padding100">
+<section class="medium-padding100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                            <img class="utouch-icon" src="img/index/svg/about_delveinsight.svg" alt="About DelveInsight">
                             <img class="cloud" src="img/clouds8.png" alt="cloud">
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Online Shopping</a>
+                            <a href="#" class="h5 info-box-title">About DelveInsight</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                 diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
@@ -222,12 +222,12 @@ Delveinsight llp
                     <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/music%20(1).svg" alt="smartphone">
+                            <img class="utouch-icon" src="img/index/svg/about_work.svg" alt="About Work">
                             <img class="cloud" src="img/clouds9.png" alt="cloud">
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Multimedia Archives</a>
+                            <a href="#" class="h5 info-box-title">About Work</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                 diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
@@ -250,12 +250,12 @@ Delveinsight llp
                     <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                            <img class="utouch-icon" src="img/index/svg/why_us.svg" alt="Why Us">
                             <img class="cloud" src="img/clouds10.png" alt="cloud">
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Quick Settings</a>
+                            <a href="#" class="h5 info-box-title">Why Us</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                 diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
@@ -282,169 +282,412 @@ Delveinsight llp
 
     <!-- Slider with vertical tabs -->
 
-    <section class="crumina-module crumina-module-slider slider-tabs-vertical-line">
-
-        <div class="swiper-container" data-show-items="1">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide bg-primary-color bg-5" data-mh="slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="slider-tabs-vertical-thumb">
-                                    <img src="img/iphone.png" alt="iphone">
+		<section class="crumina-module crumina-module-slider slider-tabs-vertical-line" id="our_services">
+            <div class="container">
+                <h2 class="slider-content-title with-decoration align-center">
+                    OUR SERVICES
+    
+                    <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
+                        <use xlink:href="#utouch-icon-arrow-left"></use>
+                    </svg>
+    
+                    <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
+                        <use xlink:href="#utouch-icon-arrow-left"></use>
+                    </svg>
+    
+                </h2>
+            </div>
+            <div class="swiper-container navigation-center-both-sides" data-show-items="1" data-effect="fade">
+                <div class="swiper-wrapper">
+                     
+                    <div class="swiper-slide bg-primary-color bg-5" data-mh="slide">
+                        <div class="container pt-50">
+                                
+                            <div class="row">
+                                
+                                
+                                <div class="col-lg-6 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-xs-12">
+                                    <div class="crumina-module crumina-heading custom-color c-white">
+                                        <h4 class="heading-sup-title">Reports By Therapeutic Areas</h4>
+                                        <div class="row px-30">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Oncology</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Respiratory</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Dermatology</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Central Nervous System</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Immunology & Infectious Diseases</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/smartphone.svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Hematological Disorders</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+    
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-md-offset-0 col-sm-12 col-xs-12 ">
+                                    <div class="crumina-module crumina-heading custom-color c-white">
+                                        <h4 class="heading-sup-title">Reports By Types</h4>
+                                        <div class="row px-30">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Market Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Drug Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Pipeline Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Rare Disease Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Epidemiology Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 py-30 ">
+                                                <div class="crumina-module crumina-info-box info-box--standard-hover">
+                            
+                                                    <div class="info-box-image">
+                                                        <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                                                    </div>
+                            
+                                                    <div class="info-box-content">
+                                                        <a href="#" class="h5 info-box-title">Indication Insights</a>
+                                                        
+                                                    </div>
+                            
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                        volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-                                        lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                        anteposuerit
-                                        litterarum formas humanitatis per.
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-orange-light bg-6" data-mh="slide">
+                        <div class="container pt-30">
+                            <div class="row">
+                                <div class="pricing-wrap">
+                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="crumina-module crumina-pricing-tables-item pricing-tables--item-with-thumb" data-mh="pricing">
+                                            <div class="pricing-thumb">
+                                                <img src="svg-icons/rocket.svg" alt="rocket" class="icon-img">
+                                                <img class="cloud" src="img/clouds8.png" alt="cloud">
+                                            </div>
+                
+                                            <div class="main-pricing-content">
+                                                <a href="#" class="h5 pricing-title">Startup</a>
+                
+                                                <p class="pricing-description">Mirum est notare quam littera gothica, quam nunc putamus parum legere me lius.</p>
+                
+                                                
+                                                <h2 class="h5 rate">$<span class="price">39</span></h2>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="crumina-module crumina-pricing-tables-item pricing-tables--item-with-thumb" data-mh="pricing">
+                                            <div class="pricing-thumb">
+                                                <img src="svg-icons/cup.svg" alt="cup" class="icon-img">
+                                                <img class="cloud" src="img/clouds10.png" alt="cloud">
+                                            </div>
+                
+                                            <div class="main-pricing-content">
+                                                <a href="#" class="h5 pricing-title">Professional</a>
+                
+                                                <p class="pricing-description">Claritas est etiam processus dynamicus, qui mutationem consuetudium lectorum.</p>
+                
+                                                
+                                                <h2 class="h5 rate">$<span class="price">99</span></h2>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="crumina-module crumina-pricing-tables-item pricing-tables--item-with-thumb" data-mh="pricing">
+                                            <div class="pricing-thumb">
+                                                <img src="svg-icons/shirt.svg" alt="shirt" class="icon-img">
+                                                <img class="cloud" src="img/clouds10.png" alt="cloud">
+                                            </div>
+                
+                                            <div class="main-pricing-content">
+                                                <a href="#" class="h5 pricing-title">Corporate</a>
+                
+                                                <p class="pricing-description">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+                
+                                                
+                                                <h2 class="h5 rate">$<span class="price">69</span></h2>
+                                            </div>
+                
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
+                    <div class="swiper-slide bg-red bg-7" data-mh="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
+                                        <div class="crumina-module crumina-heading custom-color c-white">
+                                                <h6 class="heading-sup-title">User Interface</h6>
+                                                <h2 class="heading-title">Discover new horisons</h2>
+                                                <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                                    elit, sed
+                                                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                    volutpat.
+                                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                                    lectorum.
+                                                    Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                                    anteposuerit
+                                                    litterarum formas humanitatis per.
+                                                </div>
+                                            </div>
+        
+                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                                <svg class="utouch-icon utouch-icon-apple-logotype-1">
+                                                    <use xlink:href="#utouch-icon-apple-logotype-1"></use>
+                                                </svg>
+                                                <div class="text">
+                                                    <span class="sup-title">Download on the</span>
+                                                    <span class="title">App Store</span>
+                                                </div>
+                                            </a>
+        
+                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                                <img class="utouch-icon" src="svg-icons/google-play.svg" alt="google">
+                                                <div class="text">
+                                                    <span class="sup-title">Download on the</span>
+                                                    <span class="title">Google Play</span>
+                                                </div>
+                                            </a>
+                                </div>
+                                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
+                                    <div class="crumina-module crumina-heading custom-color c-white">
+                                        <h6 class="heading-sup-title">User Interface</h6>
+                                        <h2 class="heading-title">Discover new horisons</h2>
+                                        <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                            elit, sed
+                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                            volutpat.
+                                            Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                            lectorum.
+                                            Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                            anteposuerit
+                                            litterarum formas humanitatis per.
+                                        </div>
                                     </div>
-                                </a>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="svg-icons/google-play.svg" alt="google">
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
-                                    </div>
-                                </a>
+                                    <a href="#" class="btn btn-market btn--with-shadow">
+                                        <svg class="utouch-icon utouch-icon-apple-logotype-1">
+                                            <use xlink:href="#utouch-icon-apple-logotype-1"></use>
+                                        </svg>
+                                        <div class="text">
+                                            <span class="sup-title">Download on the</span>
+                                            <span class="title">App Store</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="btn btn-market btn--with-shadow">
+                                        <img class="utouch-icon" src="svg-icons/google-play.svg" alt="google">
+                                        <div class="text">
+                                            <span class="sup-title">Download on the</span>
+                                            <span class="title">Google Play</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-orange-light bg-6" data-mh="slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="slider-tabs-vertical-thumb">
-                                    <img src="img/iphone2.png" alt="iphone">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                        volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-                                        lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                        anteposuerit
-                                        litterarum formas humanitatis per.
-                                    </div>
-                                </div>
+                <div class="slider-slides slider-slides--vertical-line">
+                    <a href="#" class="slides-item">
+                        <span class="round primary"></span>Reports
+                    </a>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
-                                    </div>
-                                </a>
+                    <a href="#" class="slides-item">
+                        <span class="round orange"></span>Consulting Service
+                    </a>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="svg-icons/google-play.svg" alt="google">
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" class="slides-item">
+                        <span class="round red"></span>Areas
+                    </a>
+
+                </div>
+                <!--Prev next buttons-->
+
+                <div class="btn-prev btn-prev-main with-bg">
+                    <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
+                        <use xlink:href="#utouch-icon-arrow-left-1"></use>
+                    </svg>
+                    <svg class="utouch-icon utouch-icon-arrow-left1">
+                        <use xlink:href="#utouch-icon-arrow-left1"></use>
+                    </svg>
                 </div>
 
-                <div class="swiper-slide bg-red bg-7" data-mh="slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="slider-tabs-vertical-thumb">
-                                    <img src="img/iphone3.png" alt="iphone">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                        volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-                                        lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                        anteposuerit
-                                        litterarum formas humanitatis per.
-                                    </div>
-                                </div>
-
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="svg-icons/google-play.svg" alt="google">
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn-next btn-next-main with-bg">
+                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                    </svg>
+                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                    </svg>
                 </div>
             </div>
 
-            <div class="slider-slides slider-slides--vertical-line">
-                <a href="#" class="slides-item">
-                    <span class="round primary"></span>01.
-                </a>
+        </section>
+    
+            <!-- ... Slider with vertical tabs -->
 
-                <a href="#" class="slides-item">
-                    <span class="round orange"></span>02.
-                </a>
 
-                <a href="#" class="slides-item">
-                    <span class="round red"></span>03.
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ... Slider with vertical tabs -->
+   
 
 
     <!-- Video -->
@@ -490,10 +733,432 @@ Delveinsight llp
 
     <!-- ... end Video -->
 
+     <!-- Counters -->
 
-    <!-- Clients Block -->
+     <section class="bg-secondary-color background-contain bg-10">
 
-    <section class="crumina-module crumina-clients background-contain bg-yellow">
+            <div class="container">
+                <div class="row">
+                    <div class="counters">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <div class="crumina-module crumina-counter-item">
+                                <div class="counter-numbers counter c-yellow">
+                                    <span data-speed="2000" data-refresh-interval="3" data-to="6237"
+                                        data-from="2">6237</span>
+                                </div>
+                                <h5 class="counter-title">Line of codes</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <div class="crumina-module crumina-counter-item">
+                                <div class="counter-numbers counter c-yellow">
+                                    <span data-speed="2000" data-refresh-interval="3" data-to="4000"
+                                        data-from="2">4000</span>
+                                </div>
+                                <h5 class="counter-title">Solutions</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <div class="crumina-module crumina-counter-item">
+                                <div class="counter-numbers counter c-yellow">
+                                    <span data-speed="2000" data-refresh-interval="3" data-to="3" data-from="2">3</span>
+                                    <div class="units">M+</div>
+                                </div>
+                                <h5 class="counter-title">Active users</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <div class="crumina-module crumina-counter-item">
+                                <div class="counter-numbers counter c-yellow">
+                                    <span data-speed="2000" data-refresh-interval="3" data-to="8" data-from="2">8</span>
+                                    <div class="units">M+</div>
+                                </div>
+                                <h5 class="counter-title">Download</h5>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <h5 class="c-white">Utouch is an awesome app</h5>
+                            <p class="c-semitransparent-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy euismod.</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+        <!-- ... end  Counters -->
+    <!-- Case Item -->
+
+	<section class="crumina-module crumina-module-slider medium-padding100">
+            <div class="container">
+                <div class="row">
+                    <div class="crumina-module crumina-module-img-bottom">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="crumina-module crumina-heading">
+                                <h6 class="heading-sup-title">Our Works</h6>
+                                <h2 class="heading-title">Let Everyone Know Why We are the Best</h2>
+                                <div class="heading-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                    anteposuerit litterarum formas humanitatis per.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-lg-offset-3 col-md-12 col-sm-12 col-sm-offset-0">
+                            <a href="04_works.html" class="btn btn-border btn--with-shadow c-primary mb30">
+                                All Works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="swiper-container pagination-bottom" data-show-items="1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row px-30" id="featured_reports">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                                    <img src="jpg/233730_market.png" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Acute Respiratory Distress Syndrome- Epidemiology Forecast to 2028</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Report</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                                    <img src="jpg/233730_market.png" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Cytomegalovirus (CMV) Infection- Epidemiology Forecast to 2028</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                                    <img src="jpg/233730_market.png" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Chemotherapy Induced Neutropenia- Epidemiology Forecast to 2028</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                                    <img src="jpg/233730_market.png" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title"> Sarcopenia- Epidemiology Forecast to 2028</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row px-30" id="featured_reports">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="img/case1.jpg" class="case-item__thumb js-zoom-image">
+                                                    <img src="img/case1.jpg" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="img/case1.jpg" class="case-item__thumb js-zoom-image">
+                                                    <img src="img/case1.jpg" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="img/case1.jpg" class="case-item__thumb js-zoom-image">
+                                                    <img src="img/case1.jpg" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                                <a href="img/case1.jpg" class="case-item__thumb js-zoom-image">
+                                                    <img src="img/case1.jpg" alt="case">
+                                                </a>
+            
+                                                <div class="square-colored bg-product-blue"></div>
+                                                <div class="case-item-content">
+                                                    <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                                    <a href="#" class="more-arrow white">
+                                                        <span>View Case</span>
+                                                        <div class="btn-next">
+                                                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                            </svg>
+                                                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+    
+                               
+                            </div>
+    
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination bottom-left"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="swiper-container pagination-bottom" data-show-items="1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                        <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                            <img src="jpg/233730_market.png" alt="case">
+                                        </a>
+    
+                                        <div class="square-colored bg-product-blue"></div>
+                                        <div class="case-item-content">
+                                            <h5 class="title">Aneurysmal Subarachnoid Hemorrhage (SAH) - Epidemiology Forecast to 2028</h5>
+                                            <a href="#" class="more-arrow white">
+                                                <span>View Case</span>
+                                                <div class="btn-next">
+                                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                    </svg>
+                                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                        <a href="jpg/233730_market.png" class="case-item__thumb js-zoom-image">
+                                            <img src="jpg/233730_market.png" alt="case">
+                                        </a>
+    
+                                        <div class="square-colored bg-product-blue"></div>
+                                        <div class="case-item-content">
+                                            <h5 class="title">Bacterial (Pyogenic) Meningitis - Epidemiology Forecast to 2028</h5>
+                                            <a href="#" class="more-arrow white">
+                                                <span>View Case</span>
+                                                <div class="btn-next">
+                                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                    </svg>
+                                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                        <a href="img/case2.jpg" class="case-item__thumb js-zoom-image">
+                                            <img src="img/case2.jpg" alt="case">
+                                        </a>
+    
+                                        <div class="square-colored bg-product-violet"></div>
+                                        <div class="case-item-content">
+                                            <h5 class="title">Mirum est notare quam littera gothica, quam nunc putamus parum</h5>
+                                            <a href="#" class="more-arrow white">
+                                                <span>View Case</span>
+                                                <div class="btn-next">
+                                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                    </svg>
+                                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                        <a href="img/case1.jpg" class="case-item__thumb js-zoom-image">
+                                            <img src="img/case1.jpg" alt="case">
+                                        </a>
+    
+                                        <div class="square-colored bg-product-blue"></div>
+                                        <div class="case-item-content">
+                                            <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                            <a href="#" class="more-arrow white">
+                                                <span>View Case</span>
+                                                <div class="btn-next">
+                                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                    </svg>
+                                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide">
+                                    <div class="crumina-module crumina-case-item" data-mh="case-item">
+                                        <a href="img/case2.jpg" class="case-item__thumb js-zoom-image">
+                                            <img src="img/case2.jpg" alt="case">
+                                        </a>
+    
+                                        <div class="square-colored bg-product-violet"></div>
+                                        <div class="case-item-content">
+                                            <h5 class="title">Mirum est notare quam littera gothica, quam nunc putamus parum</h5>
+                                            <a href="#" class="more-arrow white">
+                                                <span>View Case</span>
+                                                <div class="btn-next">
+                                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                                    </svg>
+                                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination bottom-left"></div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- ... end Case Items -->
+
+    
+
+
+   <!-- Clients Block -->
+
+   <section class="crumina-module crumina-clients background-contain bg-yellow">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
@@ -551,154 +1216,16 @@ Delveinsight llp
     <!-- ... end Clients Block -->
 
 
-    <!-- Info Boxes -->
-
-    <section class="bg-9 background-contain medium-padding120">
-        <div class="container">
-            <div class="row">
-                <div class="display-flex info-boxes">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div
-                            class="crumina-module crumina-info-box info-box--standard-round icon-right negative-margin-right150">
-                            <div class="info-box-image">
-                                <img src="svg-icons/chat.svg" alt="chat" class="utouch-icon">
-                            </div>
-                            <div class="info-box-content">
-                                <h5 class="info-box-title">Private Chat Integration</h5>
-                                <p class="info-box-text">Sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                    nibh euismod
-                                    tincidunt.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="crumina-module crumina-info-box info-box--standard-round icon-right negative-margin-right150">
-                            <div class="info-box-image">
-                                <img src="svg-icons/pictures.svg" alt="chat" class="utouch-icon">
-                            </div>
-                            <div class="info-box-content">
-                                <h5 class="info-box-title">Perfect Grafic View</h5>
-                                <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                    sed diam
-                                    nonummy nibh euismod.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 align-center">
-                        <img class="particular-image" src="img/image.png" alt="image">
-                        <a href="03_products.html" class="btn btn--red btn--with-shadow">
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div
-                            class="crumina-module crumina-info-box info-box--standard-round negative-margin-left150">
-                            <div class="info-box-image">
-                                <img src="svg-icons/clock.svg" alt="chat" class="utouch-icon">
-                            </div>
-                            <div class="info-box-content">
-                                <h5 class="info-box-title">Lifetime Updates</h5>
-                                <p class="info-box-text">Sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                    nibh euismod
-                                    tincidunt.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="crumina-module crumina-info-box info-box--standard-round negative-margin-left150">
-                            <div class="info-box-image">
-                                <img src="svg-icons/calendar.svg" alt="chat" class="utouch-icon">
-                            </div>
-                            <div class="info-box-content">
-                                <h5 class="info-box-title">Calendar Sinhronize</h5>
-                                <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                    sed diam
-                                    nonummy euismod.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ... Info Boxes -->
-
-
-    <!-- Counters -->
-
-    <section class="bg-secondary-color background-contain bg-10">
-
-        <div class="container">
-            <div class="row">
-                <div class="counters">
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                        <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="6237"
-                                    data-from="2">6237</span>
-                            </div>
-                            <h5 class="counter-title">Line of codes</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                        <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="4000"
-                                    data-from="2">4000</span>
-                            </div>
-                            <h5 class="counter-title">Solutions</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                        <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="3" data-from="2">3</span>
-                                <div class="units">M+</div>
-                            </div>
-                            <h5 class="counter-title">Active users</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                        <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="8" data-from="2">8</span>
-                                <div class="units">M+</div>
-                            </div>
-                            <h5 class="counter-title">Download</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="c-white">Utouch is an awesome app</h5>
-                        <p class="c-semitransparent-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy euismod.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- ... end  Counters -->
-
 
     <!-- FAQS Slider -->
 
-    <section class="crumina-module crumina-module-slider pt100">
+    <section class="crumina-module crumina-module-slider pt100" id="our_services_tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb30">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">FAQ</h6>
-                        <h2 class="heading-title">Six important questions on application</h2>
+                        <h2 class="heading-title">Our Services</h2>
                     </div>
                 </div>
             </div>
@@ -708,27 +1235,27 @@ Delveinsight llp
                     <div class="swiper-container navigation-bottom" data-effect="fade">
                         <div class="slider-slides">
                             <a href="#" class="slides-item">
-                                1
+                                Reports
                             </a>
 
                             <a href="#" class="slides-item">
-                                2
+                                Consulting Services
                             </a>
 
                             <a href="#" class="slides-item">
-                                3
+                                Consulting
                             </a>
 
                             <a href="#" class="slides-item">
-                                4
+                                Services
                             </a>
 
                             <a href="#" class="slides-item">
-                                5
+                                Reports Services
                             </a>
 
                             <a href="#" class="slides-item">
-                                6
+                                Services
                             </a>
                         </div>
                         <div class="swiper-wrapper">
