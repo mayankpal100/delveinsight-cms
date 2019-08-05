@@ -23,11 +23,11 @@ module.exports = {
   |
   */
   smtp: {
-    driver: 'smtp',
+    driver: Env.get('MAIL_DRIVER','smtp'),
     pool: true,
-    port: 2525,
+    port: Env.get('MAIL_PORT',2525),
     host: Env.get('SMTP_HOST'),
-    secure: false,
+    secure: false, 
     auth: {
       user: Env.get('MAIL_USERNAME'),
       pass: Env.get('MAIL_PASSWORD')
