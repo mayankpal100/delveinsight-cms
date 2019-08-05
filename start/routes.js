@@ -18,7 +18,11 @@ const Route = use('Route')
 
 Route.on('/').render('index')
 
-
+Route
+  .group(() => {
+    Route.get('/:service?', 'HomeController.consulting').as('consulting')
+  })
+  .prefix('consulting')
 
 
 //Route.on('/my-url.php').render('index')
