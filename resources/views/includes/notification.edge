@@ -1,0 +1,23 @@
+
+
+
+@if(flashMessage('notification'))
+
+<div class="notification is- ">
+
+</div>
+
+<div class="alert alert-{{ flashMessage('notification.type') }}" role="alert">
+    @if(flashMessage('notification.type')=='danger')
+        <strong>Oh snap!</strong>
+    @elseif( flashMessage('notification.type')=='success' )
+        <strong>Well done!</strong>
+    @elseif( flashMessage('notification.type')=='info' )
+        <strong>Heads up!</strong>
+    @elseif( flashMessage('notification.type')=='warning' )
+        <strong>Warning!</strong>
+    @endif
+     {{ flashMessage('notification.message') }}
+</div>
+
+@endif

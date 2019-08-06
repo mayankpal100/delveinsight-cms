@@ -3,7 +3,8 @@
 const { validateAll } = use('Validator')
 const User = use('App/Models/User')
 const Mail = use('Mail')
-
+const Env = use('Env')
+const swal = use('sweetalert2')
 
 class UserController {
 
@@ -29,6 +30,8 @@ class UserController {
        async register ({ request , session , response })
       {
         //form validation 
+
+      //  swal('Hello world!')
         const rules = {
           email: 'required|unique:users,email',
           username: 'required|unique:users,username',
@@ -61,25 +64,36 @@ class UserController {
      
     })
 
+      if(Env.get('NODE_ENV')=="development")
+     { user.email='mpal@delveinsight.com'}
       
-    await Mail.send('emails.welcome', user.toJSON(), (message) => {
+     console.log(user.email)
+    await Mail.send('emails.confirm_email', user.toJSON(), (message) => {
       message
-        .to('mpal@delveinsight.com')
+        .to(user.email)
         .from('info@pharmdelve.com')
         .subject('Welcome to ses testing')
     })
 
 
+      session.flash({
+        notification: {
+          type: 'success',
+          message: 'Registration successful! A mail has been set to your email address.' 
+        }
+      })
 
+    console.log("send done with mail")
 
-        return response.redirect('back')
+    swal('Hello world!')
+      return response.redirect('back')
 
       }
 
       sendtest ({view})
       {
 
-
+        swal('Hello world!')
     
         return 'Registered successfully'
       }

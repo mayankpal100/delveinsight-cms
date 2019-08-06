@@ -24,6 +24,7 @@ const providers = [
   '@adonisjs/mail/providers/MailProvider',
   'adonis-acl/providers/AclProvider',
   '@adonisjs/validator/providers/ValidatorProvider',
+  'adonis-scheduler/providers/SchedulerProvider',
   
 ]
 
@@ -39,6 +40,7 @@ const providers = [
 const aceProviders = [
   '@adonisjs/lucid/providers/MigrationsProvider',
   'adonis-acl/providers/CommandsProvider',
+  'adonis-scheduler/providers/CommandsProvider',
 ]
 
 /*
@@ -58,6 +60,7 @@ const aliases = {
   //custome add
   Role: 'Adonis/Acl/Role',
   Permission: 'Adonis/Acl/Permission',
+  Scheduler: 'Adonis/Addons/Scheduler',
 }
 
 /*

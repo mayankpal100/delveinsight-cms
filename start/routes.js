@@ -42,3 +42,4 @@ Route.get('register', 'UserController.showregisterform');
 Route.post('register', 'UserController.register');
 Route.get('post','PostController.home');
 Route.get('post/all','PostController.allPost');
+Route.get('sendtest','UserController.sendtest');
