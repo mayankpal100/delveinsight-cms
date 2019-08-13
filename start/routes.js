@@ -16,7 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('index')
+Route.on('/').render('index').as('home');
 
 
 Route
@@ -30,16 +30,22 @@ Route
 //Route.on('/my-url.php').render('index')
 
 Route
-  .get('/profile', 'UserController.profile')
+  .get('profile', 'UserController.profile')
   .middleware('auth');
 
 Route
   .get('users/:id', 'UserController.show')
   .middleware('auth');
 
-Route.post('login', 'UserController.login');
-Route.get('register', 'UserController.showregisterform');
+Route.get('login', 'UserController.loginshow').as('login');
+Route.get('register', 'UserController.showregisterform').as('register');
 Route.post('register', 'UserController.register');
+Route.post('login', 'UserController.login').validator('LoginUser');
+Route.get('logout', async ({ auth, response }) => {
+  await auth.logout();
+  return response.redirect('/');
+}).as('logout');
+
 Route.get('post','PostController.home');
 Route.get('post/all','PostController.allPost');
 Route.get('sendtest','UserController.sendtest');

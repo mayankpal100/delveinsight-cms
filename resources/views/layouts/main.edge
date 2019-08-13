@@ -167,12 +167,20 @@
 
 					<ul class="primary-menu-menu">
 						<li class="menu-item-has-children">
-							<a href="index.html">Home</a>
+						<a href="{{route('home')}}">Home</a>
 						</li>
 						
 						<li class="">
 								<a href="15_pricing_tables.html">About Us</a>
 						</li>
+						@loggedIn
+					<li><a href="{{route('logout')}}">Logout</a></li>
+					@else
+						<li><a href="{{route('login')}}">Login</a></li>
+						<li><a href="{{route('register')}}">Signup</a></li>
+					@endloggedIn
+
+						
 						<li class="">
 						<a href="{{route('consulting')}}">Consulting</a>
 							<ul class="sub-menu">
