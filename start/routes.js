@@ -41,6 +41,7 @@ Route.get('login', 'UserController.loginshow').as('login');
 Route.get('register', 'UserController.showregisterform').as('register');
 Route.post('register', 'UserController.register');
 Route.post('login', 'UserController.login').validator('LoginUser');
+Route.get('resetpassword', 'UserController.resetpassword').as('resetpassword');
 Route.get('logout', async ({ auth, response }) => {
   await auth.logout();
   return response.redirect('/');

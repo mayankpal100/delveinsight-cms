@@ -96,6 +96,11 @@ class UserController {
        // console.log('dkjhdsj');
          return view.render('pages.login');
       }
+       resetpassword({view}) {
+
+       // console.log('dkjhdsj');
+         return view.render('pages.resetpassword');
+      }
 
       async login({ request, auth, response, session }) {
 
