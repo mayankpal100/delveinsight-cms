@@ -17,7 +17,7 @@ Delveinsight llp
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  
+                    
                 </div>
 
                 <div class="send-message-popup">
@@ -25,8 +25,6 @@ Delveinsight llp
                         <h5>Register</h5>
                         <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.
                         </p>
-                        @include('includes.notification')  
-
                         <form  class="form-validate " method="post" action="{{ route('UserController.register') }}" novalidate="">
                                 {{ csrfField() }}
 
@@ -37,7 +35,7 @@ Delveinsight llp
                                 class="input {{ hasErrorFor('username') ? 'parsley-error' : '' }}"
                                 placeholder="Your Name"
                                 type="text"
-                                required="required"
+                                {{--  required="required"  --}}
                                 value="{{ old('username','') }}"
                                 
                                 > 
@@ -54,7 +52,7 @@ Delveinsight llp
                                 name="email" 
                                 placeholder="Email Adress"
                                 type="text" 
-                                required="required"
+                                {{--  required="required"  --}}
                                 value="{{ old('email','') }}"
                                 >
                                 {{ elIf('<span class="help parsley-error">$self</span>', getErrorFor('email'), hasErrorFor('email')) }}
@@ -80,8 +78,8 @@ Delveinsight llp
                                 class="with-icon input {{ hasErrorFor('password') ? 'parsley-error' : '' }}" 
                                 name="password" 
                                 placeholder="Enter Password" 
-                                type="password"
-                                required="required"
+                                type="text"
+                                {{--  required="required"  --}}
                                 value="{{ old('password', '') }}"
                                 >
                                 {{ elIf('<span class="help parsley-error">$self</span>', getErrorFor('password'), hasErrorFor('password')) }}
