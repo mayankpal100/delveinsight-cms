@@ -2,16 +2,30 @@
 .w-50 {
     width: 50%!important;
 }
-.mr-0 {
-    margin-right: 0!important;
+.py-10 {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+.py-20 {
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
 }
 .py-30 {
     padding-top: 30px!important;
     padding-bottom: 30px!important;
 }
-.py-10 {
-    padding-top: 10px!important;
-    padding-bottom: 10px!important;
+.py-50 {
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
+.py-100 {
+    padding-top: 100px!important;
+    padding-bottom: 100px!important;
+}
+
+.px-0 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
 }
 .px-10 {
     padding-left: 10px!important;
@@ -27,8 +41,46 @@
 .pt-50 {
     padding-top: 50px!important;
 }
-
-
+.pt-90 {
+    padding-top: 90px!important;
+}
+.pb-0 {
+    padding-bottom: 0px!important;
+}
+.pl-30 {
+    padding-left: 30px!important;
+}
+.mr-0 {
+    margin-right: 0!important;
+}
+.mt-0 {
+    margin-top: 0!important;
+}
+.my-0 {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.text-right {
+    text-align: right!important;
+}
+.text-left {
+    text-align: left!important;
+}
+.w-auto {
+    width: auto!important;
+}
+.ml-auto {
+    margin-left: auto!important;
+}
+.mr-auto {
+    margin-right: auto!important;
+}
+.m-auto {
+    margin: 0 auto!important;
+}
 
 
 
@@ -83,7 +135,7 @@
 }
 .search-header .search-on-top input[type="search"]:focus {
     border: 0;
-    border-bottom: 2px solid #0083ff;
+    border: 2px solid #0083ff;
 
     color: #273f5b;
 }
@@ -146,6 +198,19 @@
     position: relative;
 }
 
+.animated.slideDown {
+    -webkit-animation-name: none;
+    -moz-animation-name: none;
+    -o-animation-name: none;
+    animation-name: none;
+}
+.animated.slideUp {
+    -webkit-animation-name: none;
+    -moz-animation-name: none;
+    -o-animation-name: none;
+    animation-name: none;
+}
+
 /*----------- End of header css---------- */
 
 
@@ -194,11 +259,22 @@
 #featured_reports .case-item__thumb img{
     width: 220px;
 }
+#suggested_reports .case-item__thumb img{
+    width: 220px;
+}
 /* #main_slider .bg-2 {
     background-image: url(../img/index/slider-1.png);
 } */
+#main_slider .bg-1 {
+    background-image: url(../img/index/png/sliderd-1.png);
+    background-size: cover;
+}
 #main_slider .bg-2 {
-    background-image: url(../img/index/png/slides_2.png);
+    background-image: url(../img/index/png/sliderd-2.png);
+    background-size: cover;
+}
+#main_slider .bg-3 {
+    background-image: url(../img/index/png/sliderd-3.png);
     background-size: cover;
 }
 
@@ -210,9 +286,62 @@
     border-radius: 9px;
     font-size: 20px;
 }
-
+#main_slider .swiper-wrapper {
+    height: 70vh;
+    min-height: 300px;
+}
+.header--menu-rounded .primary-menu-menu > li {
+    padding: 30px 0;
+}
+.header.header-has-topbar + .header-spacer {
+    height: 157px;
+}
+.bg-primary-color {
+    background-color:#eaf8f9;
+}
+.info-box--standard-hover .info-box-title {
+    color: #273f5b!important;
+}
+#featured_reports .case-item__thumb {
+    transform: initial;
+}
+#suggested_reports .case-item__thumb {
+    transform: initial;
+}
 /*-------------- End of home page css----------- */
 
+
+/* --------- CSS of pharmDelve page----------- */
+
+.bg-pharmdelve {
+    background-image: url('../img/pharmdelve/jpg/background_pharmdelve.jpg');
+}
+
+/*---------- End of pharmDelve page CSS ----------- */
+
+#upcoming_events .post .link-post.link-1 {
+    bottom: 10%;
+    top: auto;
+    right: auto;
+    left: 15%;
+    
+}
+#upcoming_events .post .link-post.link-2 {
+    bottom: 10%;
+    top: auto;
+    left: auto;
+    right: 15%;
+}
+
+
+
+
+
+@media (max-width: 1200px){
+    .primary-menu-menu > li > a {
+        font-size: 10px;
+    }
+}
 @media (min-width: 1400px){
     .container-header-top {
         width: 1400px;

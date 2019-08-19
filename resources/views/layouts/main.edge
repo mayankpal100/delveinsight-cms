@@ -16,7 +16,7 @@
   	{{ style('css/ion.rangeSlider') }}
   	{{ style('css/widgets') }}
   	{{ style('css/blocks') }}
-
+  
   @!section('extracss')
 
 	<!--External fonts-->
@@ -25,8 +25,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
 
 	<!-- Styles for Plugins -->
-	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/extra.css">
+		{{ style('css/swiper.min.css') }}
+  	{{ style('css/extra.css') }}
 
 	<!--Styles for RTL-->
 
@@ -61,7 +61,7 @@
 			<div class="container container-header-top">
 				
 				
-				<div class="top-bar-contact col-lg-6 col-md-6">
+				<div class="top-bar-contact col-lg-6">
 					<div class="contact-item language-switcher mr-0">
 						<svg class="utouch-icon world utouch-icon-world-map"><use xlink:href="#utouch-icon-world-map"></use></svg>
 						<select>
@@ -95,15 +95,15 @@
 					
 				</div>
 
-				<div class="col-lg-4 col-md-4">
+				<div class="col-lg-4 ">
 					<a href="#" class="btn btn-x-small btn--grey-light">
 						Report Store
 					</a>
-					<a href="#" class="btn btn-x-small btn--green-light">
+					<a href="{{ route('pharmdelve') }}" class="btn btn-x-small btn--green-light">
 						PharmDelve
 					</a>
 				</div>
-				<div class="follow_us follow_us-new col-lg-2 col-md-2">
+				<div class="follow_us follow_us-new col-lg-2">
 					<span>Follow us:</span>
 					<div class="socials">
 	
@@ -138,12 +138,16 @@
 			<div class="header-content-wrapper">
 
 				<div class="site-logo">
-					<a href="index.html" class="full-block"></a>
-					<img src="img/logo.png" alt="Utouch">
-					<div class="logo-text">
-						<div class="logo-title">Utouch</div>
-						<div class="logo-sub-title">app startup</div>
-					</div>
+					<a href="/">
+{{--  				
+					<img src="{{assetsUrl('img/logo/png/logo-3.png')}}" alt="Utouch">
+					  --}}
+{{--  				
+					<img src="{{assetsUrl('img/logo/png/logo-2.png')}}" alt="Utouch" style="padding: 10px;">
+					  --}}
+					  
+					<img src="{{assetsUrl('png/logo.png')}}" alt="Utouch" style="width: 184px;">
+					</a>
 				</div>
 
 				<nav id="primary-menu" class="primary-menu">
@@ -190,12 +194,12 @@
 									</a>
 								</li>
 								<li class="menu-item-has-children">
-									<a href="#">
-										Services
+									<a href="{{ route('events') }}">
+										Events
 									</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="08_events.html">Events</a>
+											<a href="{{ route('events' , { name : 'bio-us'}) }}">Bio Us</a>
 										</li>
 										<li>
 											<a href="05_case_details_ver_01.html">Case Details V1</a>
@@ -262,10 +266,10 @@
 										<div class="product-item">
 											<div class="product-item-thumb">
 												<div class="square-colored bg-product-blue"></div>
-												<img src="img/product-item1.jpg" alt="product">
+												<img src="img/events/jpg/market_research.jpg" alt="Market Research">
 											</div>
 											<div class="product-item-content">
-												<h6 class="title">Duis autem dolor in hendrerit in vulputate</h6>
+												<h6 class="title">Market Research</h6>
 												<a href="05_case_details_ver_01.html" class="more-arrow">
 													<span>View Case</span>
 													<div class="btn-next">
@@ -285,10 +289,10 @@
 										<div class="product-item">
 											<div class="product-item-thumb">
 												<div class="square-colored bg-product-violet"></div>
-												<img src="img/product-item2.jpg" alt="product">
+												<img src="img/events/jpg/pharmdelve.jpg" alt="PharmDelve">
 											</div>
 											<div class="product-item-content">
-												<h6 class="title">Investigationes lectores legere saepi</h6>
+												<h6 class="title">PharmDelve</h6>
 												<a href="06_case_details_ver_02.html" class="more-arrow">
 													<span>View Case</span>
 													<div class="btn-next">
@@ -308,10 +312,10 @@
 										<div class="product-item">
 											<div class="product-item-thumb">
 												<div class="square-colored bg-product-red"></div>
-												<img src="img/product-item3.jpg" alt="product">
+												<img src="img/events/jpg/competitive_intelligence.jpg" alt="Competitive Intelligence">
 											</div>
 											<div class="product-item-content">
-												<h6 class="title">Lorem ipsum dolor sit amet, consectetuer</h6>
+												<h6 class="title">Competitive Intelligence</h6>
 												<a href="07_case_details_ver_03.html" class="more-arrow">
 													<span>View Case</span>
 													<div class="btn-next">
@@ -331,10 +335,10 @@
 										<div class="product-item">
 											<div class="product-item-thumb">
 												<div class="square-colored bg-product-blue-dark"></div>
-												<img src="img/product-item4.jpg" alt="product">
+												<img src="img/events/jpg/business_consulting.jpg" alt="Business Consulting">
 											</div>
 											<div class="product-item-content">
-												<h6 class="title">Nam liber tempor cum soluta nobis</h6>
+												<h6 class="title">Business Consulting</h6>
 												<a href="05_case_details_ver_01.html" class="more-arrow">
 													<span>View Case</span>
 													<div class="btn-next">
@@ -1078,36 +1082,33 @@
 
 <!-- jQuery first, then Other JS. -->
 
-<script src="js/jquery-3.3.1.js"></script>
+{{ script('js/jquery-3.3.1.js') }}
+{{--  {{ script('js/js-plugins/ajax-pagination.js') }}  --}}
+{{--  {{ script('js/js-plugins/jquery.countdown.min.js') }}  --}}
+{{--  {{ script('js/js-plugins/timer.js') }}  --}}
+{{ script('js/js-plugins/crum-mega-menu.js') }}
+{{ script('js/js-plugins/swiper.jquery.min.js') }}
+{{ script('js/js-plugins/jquery.typeahead.js') }}
+{{ script('js/js-plugins/velocity.min.js') }}
+{{--  {{ script('js/js-plugins/form-actions.js') }}  --}}
+{{ script('js/js-plugins/waypoints.js') }}
+{{ script('js/js-plugins/jquery-countTo.js') }}
+{{ script('js/js-plugins/jquery.nice-select.js') }}
+{{ script('js/js-plugins/imagesLoaded.js') }}
+{{ script('js/js-plugins/jquery.magnific-popup.js') }}
+{{ script('js/js-plugins/jquery.matchHeight.js') }}
+{{ script('js/js-plugins/Headroom.js') }}
+{{ script('js/js-plugins/smooth-scroll.js') }}
+{{ script('js/js-plugins/segment.js') }}
+{{ script('js/js-plugins/bootstrap.js') }}
+{{ script('js/js-plugins/moment.js') }}
+{{ script('js/js-plugins/moment-timezone.js') }}
+{{ script('js/js-plugins/isotope.pkgd.min.js') }}
+{{ script('js/js-plugins/ion.rangeSlider.js') }}
+{{ script('js/js-plugins/parsley.min.js') }} 
 
-<!-- jQuery-scripts for Template -->
+{{ script('js/main.js') }}
 
-<script src="js/js-plugins/ajax-pagination.js"></script>
-<script src="js/js-plugins/jquery.countdown.min.js"></script>
-<script src="js/js-plugins/timer.js"></script>
-<script src="js/js-plugins/crum-mega-menu.js"></script>
-<script src="js/js-plugins/swiper.jquery.min.js"></script>
-<script src="js/js-plugins/jquery.typeahead.js"></script>
-<script src="js/js-plugins/velocity.min.js"></script>
-<script src="js/js-plugins/form-actions.js"></script>
-<script src="js/js-plugins/waypoints.js"></script>
-<script src="js/js-plugins/jquery-countTo.js"></script>
-<script src="js/js-plugins/jquery.nice-select.js"></script>
-<script src="js/js-plugins/imagesLoaded.js"></script>
-<script src="js/js-plugins/jquery.magnific-popup.js"></script>
-<script src="js/js-plugins/jquery.matchHeight.js"></script>
-<script src="js/js-plugins/Headroom.js"></script>
-<script src="js/js-plugins/smooth-scroll.js"></script>
-<script src="js/js-plugins/segment.js"></script>
-<script src="js/js-plugins/bootstrap.js"></script>
-<script src="js/js-plugins/moment.js"></script>
-<script src="js/js-plugins/moment-timezone.js"></script>
-<script src="js/js-plugins/isotope.pkgd.min.js"></script>
-<script src="js/js-plugins/ion.rangeSlider.js"></script><script src="js/js-plugins/parsley.min.js"></script>
-{{--  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>  --}}
-
-
-<script src="js/main.js"></script>
 
 
 </body>
