@@ -23,7 +23,20 @@ Route
   .group(() => {
     Route.get('/:service?', 'HomeController.consulting').as('consulting')
   })
-  .prefix('consulting')
+  .prefix('consulting');
+
+Route
+  .group(() => {
+    Route.get('/:name?', 'HomeController.events').as('events')
+  })
+  .prefix('events');
+
+//---------- First offset URLs---Static Pages Routes-----------------//
+
+Route.get('pharmdelve','HomeController.pharmdelve').as('pharmdelve');
+
+
+//---------------End of static pages Routes ----------------------//
 
 
 
@@ -43,3 +56,7 @@ Route.post('register', 'UserController.register');
 Route.get('post','PostController.home');
 Route.get('post/all','PostController.allPost');
 Route.get('sendtest','UserController.sendtest');
+
+
+
+Route.any('*', ({view}) =>  view.render('app')).prefix('admin');

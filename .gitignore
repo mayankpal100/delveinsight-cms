@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+
+# Files created by laravel-mix
+public/mix-manifest.json
+public/js/app.js
+public/css/main.css
+public/css/iconfont.css
+public/css/material-icons/
+public/css/vuesax.css
+public/css/prism-tomorrow.css
+public/css/app.css
+public/*.js
