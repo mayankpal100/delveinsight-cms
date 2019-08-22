@@ -27,6 +27,8 @@ mix.webpackConfig({
     resolve: {
         alias: {
             '@': path.resolve(__dirname, 'resources/js/src'),
+            '@views': path.resolve(__dirname, 'resources/js/src/views'),
+            '@components': path.resolve(__dirname, 'resources/js/src/views/components'),
             '@assets': path.resolve(__dirname, 'resources/assets'),
             '@sass': path.resolve(__dirname, 'resources/sass')
         }
@@ -40,12 +42,13 @@ mix.webpackConfig({
 ])
 .copy('node_modules/vuesax/dist/vuesax.css', 'public/css/vuesax.css') // Vuesax framework css
 .copy('resources/assets/css/iconfont.css', 'public/css/iconfont.css') // Feather Icon Font css
+.copy('resources/assets/css/extra-vue.css', 'public/css/extra-vue.css') // Extraa css of Vue
 .copyDirectory('resources/assets/fonts', 'public/fonts') // Feather Icon fonts
 .copyDirectory('node_modules/material-icons/iconfont', 'public/css/material-icons') // Material Icon fonts
 .copyDirectory('node_modules/material-icons/iconfont/material-icons.css', 'public/css/material-icons/material-icons.css') // Material Icon fonts css
 .copy('node_modules/prismjs/themes/prism-tomorrow.css', 'public/css/prism-tomorrow.css'); // Prism Tomorrow theme css
 
-
+mix.browserSync({proxy: 'http://192.168.1.202:3333', ignore: ['resouces/assets/']});
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

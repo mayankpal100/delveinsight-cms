@@ -1,0 +1,48 @@
+var map = {
+	"./avatar-s-1.png": "./resources/assets/images/portrait/small/avatar-s-1.png",
+	"./avatar-s-10.png": "./resources/assets/images/portrait/small/avatar-s-10.png",
+	"./avatar-s-11.png": "./resources/assets/images/portrait/small/avatar-s-11.png",
+	"./avatar-s-12.png": "./resources/assets/images/portrait/small/avatar-s-12.png",
+	"./avatar-s-13.png": "./resources/assets/images/portrait/small/avatar-s-13.png",
+	"./avatar-s-14.png": "./resources/assets/images/portrait/small/avatar-s-14.png",
+	"./avatar-s-15.png": "./resources/assets/images/portrait/small/avatar-s-15.png",
+	"./avatar-s-16.png": "./resources/assets/images/portrait/small/avatar-s-16.png",
+	"./avatar-s-17.png": "./resources/assets/images/portrait/small/avatar-s-17.png",
+	"./avatar-s-18.png": "./resources/assets/images/portrait/small/avatar-s-18.png",
+	"./avatar-s-19.png": "./resources/assets/images/portrait/small/avatar-s-19.png",
+	"./avatar-s-2.png": "./resources/assets/images/portrait/small/avatar-s-2.png",
+	"./avatar-s-20.png": "./resources/assets/images/portrait/small/avatar-s-20.png",
+	"./avatar-s-21.png": "./resources/assets/images/portrait/small/avatar-s-21.png",
+	"./avatar-s-22.png": "./resources/assets/images/portrait/small/avatar-s-22.png",
+	"./avatar-s-23.png": "./resources/assets/images/portrait/small/avatar-s-23.png",
+	"./avatar-s-24.png": "./resources/assets/images/portrait/small/avatar-s-24.png",
+	"./avatar-s-25.png": "./resources/assets/images/portrait/small/avatar-s-25.png",
+	"./avatar-s-26.png": "./resources/assets/images/portrait/small/avatar-s-26.png",
+	"./avatar-s-3.png": "./resources/assets/images/portrait/small/avatar-s-3.png",
+	"./avatar-s-4.png": "./resources/assets/images/portrait/small/avatar-s-4.png",
+	"./avatar-s-5.png": "./resources/assets/images/portrait/small/avatar-s-5.png",
+	"./avatar-s-6.png": "./resources/assets/images/portrait/small/avatar-s-6.png",
+	"./avatar-s-7.png": "./resources/assets/images/portrait/small/avatar-s-7.png",
+	"./avatar-s-8.png": "./resources/assets/images/portrait/small/avatar-s-8.png",
+	"./avatar-s-9.png": "./resources/assets/images/portrait/small/avatar-s-9.png"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/assets/images/portrait/small sync recursive ^\\.\\/.*$";

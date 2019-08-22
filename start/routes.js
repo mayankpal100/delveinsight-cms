@@ -39,6 +39,16 @@ Route.get('pharmdelve','HomeController.pharmdelve').as('pharmdelve');
 //---------------End of static pages Routes ----------------------//
 
 
+//************---- Start of APIs----***************//
+
+Route.group(() => {
+    Route.post('/create-report','ReportController.create').as('create-report-post')
+  })
+  .prefix('api')
+
+
+//^^^^^^^^^^^-------END OF APIs ------^^^^^^^^^^^//
+
 
 //Route.on('/my-url.php').render('index')
 

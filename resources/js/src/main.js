@@ -16,17 +16,28 @@ import Vuesax from 'vuesax'
 
 Vue.use(Vuesax)
 
+
+// axios
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 // Theme Configurations
 import '../themeConfig.js'
 
 // Globally Registered Components
 import './globalComponents.js'
 
+
+
 // Vue Router
 import router from './router'
 
 // Vuex Store
 import store from './store/store'
+
+// VeeValidate
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate);
 
 // Vuesax Admin Filters
 import './filters/filters'

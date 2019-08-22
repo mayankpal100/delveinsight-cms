@@ -24,7 +24,7 @@ Vue.use(Router)
 
 const router = new Router({
     mode: 'history',
-    base: '/',
+    base: '/admin/',
     routes: [
 
       {
@@ -40,13 +40,68 @@ const router = new Router({
           {
             path: '/',
             name: 'home',
-            component: () => import('./views/Home.vue'),
+            component: () => import('./views2/Home.vue'),
           },
           {
             path: '/page2',
             name: 'page2',
-            component: () => import('./views/Page2.vue'),
+            component: () => import('./views2/Page2.vue'),
+          }, 
+          {
+            path: '/test-page',
+            name: 'testPage',
+            component: () => import('./views2/pages/testPage.vue'),
           },
+          {
+            path: '/dashboard/analytics',
+            name: 'dashboard-analytics',
+            component: () => import('./views/DashboardAnalytics.vue'),
+            meta: {
+                rule: 'editor'
+            }
+          },
+          {
+            path: '/dashboard/ecommerce',
+            name: 'dashboard-ecommerce',
+            component: () => import('./views/DashboardECommerce.vue'),
+            meta: {
+                rule: 'admin'
+            }
+          },
+        // =============================================================================
+        // EXTENSIONS
+        // =============================================================================
+          {
+            path: '/extensions/quill-editor',
+            name: 'extra-component-quill-editor',
+            component: () => import('@/views/components/extra-components/quill-editor/QuillEditor.vue'),
+            meta: {
+                breadcrumb: [
+                    { title: 'Home', url: '/' },
+                    { title: 'Extra Components' },
+                    { title: 'Quill Editor', active: true },
+                ],
+                pageTitle: 'Quill Editor',
+                rule: 'editor'
+            },
+          },
+        // =============================================================================
+        // Pages Routes
+        // =============================================================================
+          {
+            path: '/report/create',
+            name: 'create-report',
+            component: () => import('@/views/pages/report/Create.vue'),
+            meta: {
+                breadcrumb: [
+                    { title: 'Home', url: '/' },
+                    { title: 'Report' },
+                    { title: 'Create', active: true },
+                ],
+                pageTitle: 'Create Report',
+                rule: 'editor'
+            },
+          },      
         ],
       },
     // =============================================================================
@@ -62,12 +117,12 @@ const router = new Router({
           {
             path: '/pages/login',
             name: 'pageLogin',
-            component: () => import('@/views/pages/Login.vue')
+            component: () => import('@/views2/pages/Login.vue')
           },
           {
             path: '/pages/error-404',
             name: 'pageError404',
-            component: () => import('@/views/pages/Error404.vue')
+            component: () => import('@/views2/pages/Error404.vue')
           },
         ]
       },

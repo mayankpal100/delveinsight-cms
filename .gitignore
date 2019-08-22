@@ -65,6 +65,7 @@ typings/
 public/mix-manifest.json
 public/js/app.js
 public/css/main.css
+public/css/extra-vue.css
 public/css/iconfont.css
 public/css/material-icons/
 public/css/vuesax.css
